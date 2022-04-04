@@ -1,9 +1,9 @@
 {
   "name": "donation-web-2021",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -11,12 +11,13 @@
   "dependencies": {
     "@hapi/boom": "^9.1.1",
     "@hapi/cookie": "^11.0.2",
-    "@hapi/hapi": "^20.1.0",
+    "@hapi/hapi": "^20.2.1",
     "@hapi/inert": "^6.0.3",
     "@hapi/joi": "^17.1.1",
     "@hapi/vision": "^6.0.1",
     "dotenv": "^8.2.0",
-    "handlebars": "^4.7.6",
+    "handlebars": "^4.7.7",
+    "joi": "^17.6.0",
     "mongoose": "^5.13.14"
   },
   "devDependencies": {
@@ -24,5 +25,14 @@
   },
   "prettier": {
     "printWidth": 120
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ekincaid94/planner22.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ekincaid94/planner22/issues"
+  },
+  "homepage": "https://github.com/ekincaid94/planner22#readme",
+  "description": ""
 }

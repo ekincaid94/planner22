@@ -5,14 +5,14 @@ const User = require("../models/user");
 const Donations = {
   home: {
     handler: function (request, h) {
-      return h.view("home", { title: "Make a Donation" });
+      return h.view("home", { title: "Add a Guest" });
     },
   },
   report: {
     handler: async function (request, h) {
       const donations = await Donation.find().populate("donor").lean();
       return h.view("report", {
-        title: "Donations to Date",
+        title: "Guests added so far",
         donations: donations,
       });
     },
