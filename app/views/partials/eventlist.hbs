@@ -1,0 +1,22 @@
+<section class="ui raised segment">
+  <div class="ui grid">
+    <article class="eight wide column">
+      <table class="ui celled table segment">
+        <thead>
+        <tr>
+          <th>Title</th>
+          <th>Date</th>
+        </tr>
+        </thead>
+        <tbody>
+        {{#each events}}
+          <tr>
+            <td> {{title}} </td>
+            <td> {{formatDate date}}</td>
+          </tr>
+        {{/each}}
+        </tbody>
+      </table>
+    </article>
+  </div>
+</section>

@@ -1,8 +1,13 @@
-<ul class="uk-iconnav uk-margin-left">
-  <a href="/settings" class="uk-card uk-card-small uk-card-hover uk-padding-small">
-    <i class="fas fa-sliders-h fa-3x" style="color:rgb(14, 168, 160)" title="Settings" pos="bottom" uk-tooltip></i>
-  </a>
-  <a href="/logout" class="uk-card uk-card-small uk-card-hover uk-padding-small">
-    <i class="fas fa-sign-out-alt fa-3x" style="color:rgb(156, 70, 128)" title="Logout" pos="bottom" uk-tooltip></i>
-  </a>
-</ul>
+<nav class="ui inverted menu">
+  <header class="header item"><a href="/"> Bainis Wedding Planning </a></header>
+  <div class="right menu">
+    <a id="home"   class= "item" href="/home"> Create</a>
+    <a id="events" class="item" href="/events"> Events</a>
+    <a id="report" class= "item" href="/todolist"> To Do List</a>
+    <a id="settings" class= "item" href="/settings"> Settings</a>
+    <a id="logout" class= "item" href="/logout"> Logout</a>
+  </div>
+</nav>
+<script>
+  $("#{{_id}}").addClass("active item");
+</script>
